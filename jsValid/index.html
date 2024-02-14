@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Js-Valid</title>
+    <link rel="icon" type="image/png" href="openai-icon-1011x1024-uztb7qme.png">
+</head>
+<body>
+    <div class="container my-5">
+        <form id="signup" class="form w-100" name='formValidate'>
+            <h1>Form Validation</h1>
+            <div class="form-field">
+                <label for="username">Nom d'utilisateur:</label>
+                <input type="text" name="username" id="username" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="name">Nom:</label>
+                <input type="text" name="name" id="name" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="firstname">Prénom: </label>
+                <input type="text" name="firstname" id="firstname" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="dob">Date de naissance:</label>
+                <input type="date" name="dob" id="dob">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="password">Mot de passe:</label>
+                <input type="password" name="password" id="password" autocomplete="off">
+                <span id="togglePassword" class="eye-icon">👁️</span>
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="confirm-password">Confirmez votre mot de passe:</label>
+                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="sex">Sexe</label>
+                <select class="form-select" id="sex" name="sex">
+                    <option selected disabled value="">Choisir...</option>
+                    <option>Homme</option>
+                    <option>Femme</option>
+                    <option>Ne sait pas</option>
+                </select>
+                <small></small>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary mt-3" type="submit">Valider</button>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
